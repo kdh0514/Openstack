@@ -1,0 +1,45 @@
+{
+  "analysisProcessId":"analysis_proc03anpr",
+  "analysisProcessName":"anpr_analysis01",
+  "model":{
+    "id":"stress_analysis_anpr02",
+    "algorithm":"CNN",
+    "evaluation":0.88,
+    "result": [ {
+        "id":"output_1",
+        "name":"car_plate_result",
+        "dataStructure":"default",
+        "type":"string",
+        "dimension":"1*1"
+      } ]
+  },
+  "implementation":{
+    “environment”:{
+      “language”: "python",
+      "languageVersion": "3.7",
+      "package":{
+        "general":[ {
+          "name":"opencv-python",
+          "version": "4.2.0.34"
+        },
+        {
+          "name":"numpy",
+          "version": "1.18.1"
+        } ],
+        "core":[ {
+          "name":"TensorFlow",
+          "version": "1.14.0"
+        } ]
+      }
+    },
+    "targetLocation":"remote",
+    "address":"C:/document/workspace/anpr_v2.0.ml"
+  },
+  "data": [ {
+      "id":"input_1",
+      "name":"car_plate_picture",
+      "dataStructure":"jpg",
+      "type":"image",
+      "dimension":"650*460"
+  s} ]
+}

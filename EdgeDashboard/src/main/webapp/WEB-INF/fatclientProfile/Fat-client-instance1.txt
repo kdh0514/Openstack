@@ -1,0 +1,44 @@
+{
+  "FatClient": [
+  {
+    "hasInterface":"false",
+    "entityName":"Fat-Client Instance 1",
+    "connectionType":{
+      "type":"IPv4",
+      "connHasType":{
+        "targetIPv4":{
+          "address":"172.24.4.14",
+          "port":"8991"
+        }
+	  }
+	},
+    "gatherValue":{
+      "type":"singleType",
+      "hasType":{
+		"singleType":{
+		  "valueType":{
+		    "id":"sensor_data",
+		    "name":"car_plate_picture",
+		    "dataStructure":"jpg",
+		    "type":"image",
+			"dimension":"658*468"
+		  }
+		}
+	  }
+    },
+    "preprocessedValue":{
+      "type":"singleType",
+      "hasType":{
+		"singleType":{
+		  "valueType":{
+			"id":"input_1",
+		    "name":"car_plate_picture",
+		    "dataStructure":"jpg",
+		    "type":"image",
+			"dimension":"650*460"
+		  }
+        }
+      }
+    }
+  }]
+}

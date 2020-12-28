@@ -1,2 +1,0 @@
-Edge filter=lfs diff=lfs merge=lfs -text
-EdgeDashboard filter=lfs diff=lfs merge=lfs -text
